@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random GIPHY</title>
+</head>
+<body>
+    <h1 id="title">Random GIF Generator</h1>
+    <form id="form">
+        <p>
+            <label class="label" for="search">Enter a random search word </label>
+            <input type="text" id="search" class="search" required>
+          </p>
+          <p>
+            <label class="label" for="search"> Choose your rating from: g, pg, pg-13, r </label>
+            <input type="text" id="rating" class="rating" required>
+          </p>
+          <button id="button" type="submit" class="submit">Submit</button>
+          <button id="button2" onclick="window.location.reload();">Start Over</button>
+    </form>
+    <div class="results">
+        <h2 id="results-header">Random Results</h2>
+        <!--Results From Request-->
+        <section id="display">
+
+        </section>
+      </div>
+
+
+    <script src="giphy.js"></script>
+</body>
+</html>
